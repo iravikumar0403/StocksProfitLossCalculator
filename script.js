@@ -60,7 +60,7 @@ function calculateProfitAndLoss(initialPrice, currentPrice, quantity){
         
         showOutput(`Your loss is ${loss.toFixed(2)} and loss percentage is ${lossPercentage.toFixed(2)}`)
     }else{
-        showOutput("no pain, no gain and no gain no pain")
+        showOutput("no pain no gain and no gain no pain")
         document.documentElement.style.setProperty("--color1", neutralColors["--color1"])
         document.documentElement.style.setProperty("--color2", neutralColors["--color2"])
         document.documentElement.style.setProperty("--color3", neutralColors["--color3"])
