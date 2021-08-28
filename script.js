@@ -32,6 +32,10 @@ function handleClick(){
 
 function validateInputs(initialPrice, currentPrice, quantity){
     if(initialPrice && currentPrice && quantity){
+        if(initialPrice < 0 || currentPrice < 0 || quantity < 0){
+            errorEl.innerHTML = "Please enter a valid input"
+            return
+        }
         errorEl.innerHTML = ""
         return true
     }else{
